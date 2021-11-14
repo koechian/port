@@ -41,13 +41,20 @@ a::after {
 a:hover::after {
   width: 100px;
 }
-h1 {
-  font-family: "Modern No. 20";
-  font-size: 348px;
+div svg {
   position: absolute;
   top: 310px;
   left: 803px;
-  font-weight: 200;
+}
+div svg text {
+  fill: rgb(48, 48, 48);
+  stroke: rgb(48, 48, 48);
+  stroke-width: 2px;
+  transition: ease 0.5s;
+}
+div svg text:hover {
+  fill-opacity: 0.01;
+  stroke: #404040;
 }
 .gif {
   position: absolute;
