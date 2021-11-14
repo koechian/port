@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Modern No. 20";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Modern No. 20"), url("Assets/MOD20.woff") format("woff");
+}
+@font-face {
+  font-family: "Javanese Text";
+  src: url(/Assets/javatext.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Modern No. 20"; */
+  font-family: "Javanese Text", sans-serif;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ececec;
+}
+a {
+  text-decoration: none;
+  font-family: "Javanese Text", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  color: #505050;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 20px;
+  height: 2px;
+  background-color: #a14d4d;
+  transition: ease 0.3s;
+}
+a:hover::after {
+  width: 100px;
+}
+h1 {
+  font-family: "Modern No. 20";
+  font-size: 348px;
+  position: absolute;
+  top: 310px;
+  left: 803px;
+  font-weight: 200;
+}
+.gif {
+  position: absolute;
+
+  top: 115px;
+  left: 496px;
+}
+img {
+  transform: rotate(180deg);
+  height: 870px;
+  width: 494px;
+}
+hr {
+  position: absolute;
+  border-top: solid 2px #404040;
+  width: 194px;
+  bottom: 287.5px;
+  right: 545.5px;
+}
+span {
+  position: absolute;
+  bottom: 257px;
+  left: 1344px;
+  font-size: 25px;
+}
+div p {
+  font-family: "Javanese Text", sans-serif;
+  font-size: 30px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 212px;
+  left: 318px;
+  color: #505050;
+}
+a:nth-of-type(1) {
+  top: 60px;
+  left: 75px;
+}
+a:nth-of-type(2) {
+  bottom: 60px;
+  left: 75px;
+}
+a:nth-of-type(3) {
+  top: 60px;
+  right: 75px;
+}
+a:nth-of-type(3):hover::after {
+  width: 80px !important;
+}
